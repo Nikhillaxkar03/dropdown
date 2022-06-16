@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: rgb(234, 77, 103);
+    width: 100%;
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+}
+ul img{
+    visibility: hidden;
+}
+ul li{
+    list-style: none;
+    padding: 15px 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+    color: white;
+}
+li:hover{
+    cursor: pointer;
+    color: red;
+    text-shadow: 1px 1px white;
+}
+.drops{
+    visibility: hidden;
+}
+@media screen and (max-width: 630px) {
+   li{
+    visibility: hidden;
+   }
+   ul img{
+    visibility: visible;
+   }
+   .dropItems{
+    visibility: visible;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style: none;
+    display: block;
+    color: white;
+    font-size: 2rem;
+    background-color: yellowgreen;
+   }
+   .dropDown{
+    background-color: rgb(116, 42, 177);
+    width: 50%;
+   }
+}
